@@ -1,24 +1,35 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-    int a;
-    cin >> a;
+    setlocale(LC_ALL, "Russian");
 
-    // Ваш код:
-if(a>=1 && a<=5)
-    {
-    cout << "Число принадлежит одному из диапазонов";
-}
-else if(a>=10 && a<=15)
+    int n;
+    cin >> n;
+switch(n)
 {
-    cout << "Число принадлежит одному из диапазонов";
+case 0: cout <<"Ноль";
+    break;
+case 1: cout <<"Один";
+    break;
+case 2: cout <<"Два";
+    break;
+case 3: cout <<"Три";
+    break;
+case 4: cout <<"Четыре";
+    break;
+case 5: cout <<"Пять";
+    break;
+case 6: cout <<"Шесть";
+    break;
+case 7: cout <<"Семь";
+    break;
+case 8: cout <<"Восемь";
+    break;
+case 9: cout <<"Девять";
+    break;
+    default: cout <<"Ошибка";
 }
-    else
-    {
-    cout << "Число не принадлежит указанным диапазонам";    
-    }
 
 
     return 0;
