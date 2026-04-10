@@ -2,14 +2,31 @@
 using namespace std;
 
 int main() {
-    int x;
-    cin >> x;
+    setlocale(LC_ALL, "Russian");
+    int op;
+    int a, b;
     
-    if (x > 0 && x % 2 == 0 && x < 100) {
-        cout << "Подходит";
-    } else {
-        cout << "Не подходит";
+    cin >> a >> b >> op;
+switch(op)
+{
+case 1: cout << a+b;   
+    break;
+case 2: cout << a-b;   
+    break;
+case 3: cout << a*b;   
+    break;
+case 4:   if (b==0)
+    {
+        cout << "Деление на ноль";
+    }   
+    else
+    {
+    cout << a/b;
     }
-    
+    break;
+    default: cout << "Ошибка";
+}
+
+
     return 0;
 }
