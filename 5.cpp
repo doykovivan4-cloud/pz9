@@ -1,22 +1,24 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-    int a;
-    cin >> a;
+    setlocale(LC_ALL, "Russian");
 
-    // Ваш код:
-if(a>=1 && a<=10)
+    int n;
+    cin >> n;
+switch(n)
 {
-    cout << "Число принадлежит диапазону";
+case 1: 
+case 2:cout <<"Плохо";
+    break;
+case 3: cout <<"Удовлетворительно";
+    break;
+case 4: cout <<"Хорошо";
+    break;
+case 5: cout <<"Отлично";
+    break;
+    default: cout <<"Ошибка";
 }
-else 
-{
-    cout << "Число не принадлежит диапазону";
-}
-
-
 
     return 0;
 }
