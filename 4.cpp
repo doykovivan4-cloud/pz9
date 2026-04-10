@@ -1,24 +1,30 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-    int a, b; // Объявляем две переменные
-    cin >> a >> b; // Считываем два числа сразу
+    setlocale(LC_ALL, "Russian");
 
-    // Ваш код:
-if(a>b)
+    char op;
+    int a, b;
+    cin >> op >> a >> b;
+switch(op)
 {
-    cout << "Большее число: " << a;
-}
-    else if (a<b)
+case '+': cout << a+b;   
+    break;
+case '-': cout << a-b;   
+    break;
+case '*': cout << a*b;   
+    break;
+case '/':   if (b==0)
     {
-        cout << "Большее число: " << b;
+        cout << "Деление на ноль";
+    }   
+    else
+    {
+    cout << a/b;
+    }
+    break;
+    default: cout << "Ошибка";
 }
-else
-{
-    cout << "Числа равны";
-}
-
     return 0;
 }
