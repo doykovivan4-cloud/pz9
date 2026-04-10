@@ -1,18 +1,31 @@
 #include <iostream>
-
 using namespace std;
-int main() {
-    int number;
-    cin >> number;
 
-    // Ваш код
-if(number>=0)
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cin >> n;
+switch(n)
 {
-    cout << "Число не отрицательное";
+case 1:
+case 2: 
+case 3: cout <<"Зима";
+    break;
+case 4:
+case 5: 
+case 6: cout <<"Весна";
+    break;
+case 7:
+case 8: 
+case 9: cout <<"Лето";
+    break;
+case 10:
+case 11: 
+case 12: cout <<"Осень";
+    break;
+    default: cout <<"Ошибка";
 }
-else
-{
-cout << "Число отрицательное";
-}
+
     return 0;
 }
